@@ -7,7 +7,7 @@ export default function createRouter() {
 	
 	const controllers = injectDependencies()
 
-	createTaskRoutes(router, '/tasks', controllers.taskController)
+	createTaskRoutes(router, controllers.taskController)
 
 	return router
 }

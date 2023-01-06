@@ -5,5 +5,5 @@ export default interface IController {
     getAll(request: Request, response: Response): Promise<unknown>
     get(request: Request, response: Response): Promise<unknown>
     // update(request: Request, response: Response): Promise<void>
-    // delete(request: Request, response: Response): Promise<void>
+    delete(request: Request, response: Response): Promise<unknown>
 }
