@@ -20,4 +20,10 @@ export default class TaskMemoryRepository implements IRepository<Task> {
 
 		return new Promise((resolve) => resolve(task))
 	}
+
+	async delete(id: string): Promise<void> {
+		this.tasks = this.tasks.filter(task => task.id !== id)
+
+		return new Promise(resolve => resolve())
+	}
 }
