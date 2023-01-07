@@ -1,5 +1,5 @@
 import { Router } from 'express'
-import injectDependencies from '../../data/dependencyInjection/injectDependencies'
+import injectDependencies from '@/data/dependencyInjection/injectDependencies'
 import createTaskRoutes from './task/task.routes'
 
 export default function createRouter() {

@@ -1,14 +1,14 @@
 //Repositories
-import TaskMemoryRepository from '../repositories/task/TaskMemoryRepository'
+import TaskMemoryRepository from '@/repositories/task/TaskMemoryRepository'
 
 //Use cases
-import CreateTaskUseCase from '../../app/useCases/task/createTaskUseCase'
-import GetTasksUseCase from '../../app/useCases/task/getTasksUseCase'
-import GetTaskUseCase from '../../app/useCases/task/getTaskUseCase'
+import CreateTaskUseCase from '@/useCases/task/createTaskUseCase'
+import GetTasksUseCase from '@/useCases/task/getTasksUseCase'
+import GetTaskUseCase from '@/useCases/task/getTaskUseCase'
+import DeleteTaskUseCase from '@/useCases/task/deleteTaskUseCase'
 
 //Controllers
-import TaskController from '../../api/controllers/task/TaskController'
-import DeleteTaskUseCase from '../../app/useCases/task/deleteTaskUseCase'
+import TaskController from '@/controllers/task/TaskController'
 
 export default class DependencyInjection {
 	inject() {

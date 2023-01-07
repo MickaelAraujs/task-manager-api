@@ -1,6 +1,6 @@
-import Task from '../../../domain/entities/Task'
-import IRepository from '../../../domain/repositories/IRepository'
-import IDeleteTaskUseCase from '../../contracts/useCases/task/IDeleteTaskUseCase'
+import Task from '@/entities/Task'
+import IRepository from '@/domain/repositories/IRepository'
+import IDeleteTaskUseCase from '@/app/contracts/useCases/task/IDeleteTaskUseCase'
 
 export default class DeleteTaskUseCase implements IDeleteTaskUseCase {
 

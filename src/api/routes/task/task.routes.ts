@@ -1,5 +1,5 @@
 import { Router, Request, Response } from 'express'
-import TaskController from '../../controllers/task/TaskController'
+import TaskController from '@/controllers/task/TaskController'
 
 function createTaskRoutes(router: Router, taskController: TaskController) {
 	const path = '/tasks'

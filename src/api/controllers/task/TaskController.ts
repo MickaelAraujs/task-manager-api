@@ -1,9 +1,9 @@
 import { Response, Request } from 'express'
-import IController from '../contracts/IController'
-import ICreateTaskUseCase from '../../../app/contracts/useCases/task/ICreateTaskUseCase'
-import IGetTasksUseCase from '../../../app/contracts/useCases/task/IGetTasksUseCase'
-import IGetTaskUseCase from '../../../app/contracts/useCases/task/IGetTaskUseCase'
-import IDeleteTaskUseCase from '../../../app/contracts/useCases/task/IDeleteTaskUseCase'
+import IController from '@/controllers/contracts/IController'
+import ICreateTaskUseCase from '@/app/contracts/useCases/task/ICreateTaskUseCase'
+import IGetTasksUseCase from '@/app/contracts/useCases/task/IGetTasksUseCase'
+import IGetTaskUseCase from '@/app/contracts/useCases/task/IGetTaskUseCase'
+import IDeleteTaskUseCase from '@/app/contracts/useCases/task/IDeleteTaskUseCase'
 
 export default class TaskController implements IController {
 	constructor(

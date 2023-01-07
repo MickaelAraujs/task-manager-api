@@ -1,4 +1,4 @@
-import Task from '../../../../domain/entities/Task'
+import Task from '@/entities/Task'
 
 export default interface IGetTasksUseCase {
     execute(): Promise<Task[]>

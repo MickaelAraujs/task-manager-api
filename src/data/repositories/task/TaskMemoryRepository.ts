@@ -1,5 +1,5 @@
-import Task from '../../../domain/entities/Task'
-import IRepository from '../../../domain/repositories/IRepository'
+import Task from '@/entities/Task'
+import IRepository from '@/domain/repositories/IRepository'
 
 export default class TaskMemoryRepository implements IRepository<Task> {
 	tasks: Task[] = []

@@ -1,6 +1,6 @@
-import Task from '../../../domain/entities/Task'
-import IRepository from '../../../domain/repositories/IRepository'
-import IGetTaskUseCase from '../../contracts/useCases/task/IGetTaskUseCase'
+import Task from '@/entities/Task'
+import IRepository from '@/domain/repositories/IRepository'
+import IGetTaskUseCase from '@/app/contracts/useCases/task/IGetTaskUseCase'
 
 export default class GetTaskUseCase implements IGetTaskUseCase {
 
