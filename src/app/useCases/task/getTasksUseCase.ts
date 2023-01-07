@@ -1,10 +1,14 @@
-import Task from '../../../domain/entities/Task'
-import IRepository from '../../../domain/repositories/IRepository'
-import IGetTasksUseCase from '../../contracts/useCases/task/IGetTasksUseCase'
+import Task from '@/entities/Task'
+import IRepository from '@/domain/repositories/IRepository'
+import IGetTasksUseCase from '@/app/contracts/useCases/task/IGetTasksUseCase'
+import { inject, injectable } from 'inversify'
 
+@injectable()
 export default class GetTasksUseCase implements IGetTasksUseCase {
 
-	constructor(private readonly _taskRepository: IRepository<Task>) {}
+	constructor(
+		@inject('ITaskRepository') private readonly _taskRepository: IRepository<Task>
+	) {}
 
 	async execute(): Promise<Task[]> {
 		return this._taskRepository.getAll()

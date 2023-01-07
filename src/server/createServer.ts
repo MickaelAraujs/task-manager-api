@@ -1,5 +1,5 @@
 import express from 'express'
-import createRouter from '../api/routes/createRouter'
+import createRouter from '@/routes/createRouter'
 
 export default function createServer(port: number) {
 	const server = express()
