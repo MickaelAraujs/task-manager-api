@@ -1,10 +1,14 @@
 import Task from '@/entities/Task'
 import IRepository from '@/domain/repositories/IRepository'
 import ICreateTaskUseCase from '@/app/contracts/useCases/task/ICreateTaskUseCase'
+import { inject, injectable } from 'inversify'
 
+@injectable()
 export default class CreateTaskUseCase implements ICreateTaskUseCase {
 
-	constructor(private readonly _taskRepository: IRepository<Task>) {}
+	constructor(
+		@inject('ITaskRepository') private readonly _taskRepository: IRepository<Task>
+	) {}
 
 	async execute(title: string, description: string | null): Promise<Task> {
 		const id = 'iorgjierbjgi'

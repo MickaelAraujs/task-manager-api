@@ -1,6 +1,8 @@
 import Task from '@/entities/Task'
 import IRepository from '@/domain/repositories/IRepository'
+import { injectable } from 'inversify'
 
+@injectable()
 export default class TaskMemoryRepository implements IRepository<Task> {
 	tasks: Task[] = []
 
